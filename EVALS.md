@@ -99,3 +99,12 @@ service-test evidence from device and lifecycle claims.
 These checks prove packaging and one bounded Claude Code invocation. They do not
 prove identical model behavior across Claude Code and Codex or across model
 versions.
+
+## 2026-08-24 — Public-source discovery and install
+
+After the first public GitHub push, the `skills` CLI discovered exactly one skill
+from `aiopshwang/ship-mobile-app` and installed byte-identical copies for Claude
+Code and Codex from the remote source. The repository and skill detail pages were
+then present on skills.sh, and the detail page reported a Snyk security-audit
+status of `Pass` at the time of release. Directory counts and audit results are
+external state and may change independently after this observation.
