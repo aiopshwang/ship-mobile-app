@@ -1,0 +1,4 @@
+interface:
+  display_name: "Ship Mobile App"
+  short_description: "Ship mobile features across real app boundaries"
+  default_prompt: "Use $ship-mobile-app to carry this mobile app change through only the relevant data, lifecycle, platform, or release boundaries."
