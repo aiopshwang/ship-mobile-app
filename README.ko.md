@@ -4,6 +4,8 @@
 
 [![skills.sh](https://skills.sh/b/aiopshwang/ship-mobile-app)](https://skills.sh/aiopshwang/ship-mobile-app)
 
+![Ship Mobile App — 코드 한 조각이 아니라 실제 사용자 경로를 만드세요.](assets/social-card.svg)
+
 **코드 한 조각이 아니라 실제 사용자 경로를 만드세요.**
 
 Ship Mobile App은 Claude Code와 Codex에서 사용할 수 있는 오픈 Agent

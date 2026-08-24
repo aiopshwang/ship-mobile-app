@@ -4,6 +4,8 @@
 
 [![skills.sh](https://skills.sh/b/aiopshwang/ship-mobile-app)](https://skills.sh/aiopshwang/ship-mobile-app)
 
+![Ship Mobile App — Build the user path, not just the code.](assets/social-card.svg)
+
 **Build the user path, not just the code.**
 
 Ship Mobile App is an open, framework-neutral Agent Skill for Claude Code and

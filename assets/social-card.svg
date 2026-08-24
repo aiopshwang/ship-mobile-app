@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" role="img" aria-labelledby="title desc">
+  <title id="title">Ship Mobile App</title>
+  <desc id="desc">Build the user path, not just the code. A mobile app delivery skill for Codex and Claude Code.</desc>
+  <defs>
+    <linearGradient id="background" x1="80" y1="40" x2="1200" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#121A34"/>
+      <stop offset="1" stop-color="#090D1A"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="translate(1050 92) rotate(135) scale(610 440)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5B5CF0" stop-opacity=".46"/>
+      <stop offset="1" stop-color="#5B5CF0" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="proof" x1="1038" y1="192" x2="1204" y2="472" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B8F5E6"/>
+      <stop offset="1" stop-color="#79D8C1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="640" rx="40" fill="url(#background)"/>
+  <rect width="1280" height="640" rx="40" fill="url(#glow)"/>
+  <path d="M0 520C292 422 482 602 758 504c204-72 322-236 522-186v322H0Z" fill="#5B5CF0" opacity=".08"/>
+  <rect x="72" y="72" width="258" height="48" rx="24" fill="#FFFFFF" opacity=".08"/>
+  <circle cx="101" cy="96" r="7" fill="#91E4CF"/>
+  <text x="120" y="104" fill="#DDE1FF" font-family="Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="20" font-weight="650" letter-spacing=".8">AI AGENT SKILL</text>
+  <text x="72" y="264" fill="#FFFFFF" font-family="Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="86" font-weight="780" letter-spacing="-3.5">Ship Mobile App</text>
+  <text x="78" y="342" fill="#BFC6DD" font-family="Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="34" font-weight="520">Build the user path, not just the code.</text>
+  <text x="78" y="414" fill="#8F99B6" font-family="Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="25" font-weight="480">Cross five truth boundaries with evidence.</text>
+  <rect x="76" y="482" width="324" height="62" rx="31" fill="#5B5CF0"/>
+  <text x="238" y="522" fill="#FFFFFF" text-anchor="middle" font-family="Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="22" font-weight="680">Codex · Claude Code</text>
+  <circle cx="865" cy="332" r="82" fill="none" stroke="#FFFFFF" stroke-width="30"/>
+  <circle cx="865" cy="332" r="20" fill="#B8F5E6"/>
+  <path d="M947 332h88" fill="none" stroke="#FFFFFF" stroke-width="30" stroke-linecap="round"/>
+  <path d="m1000 292 47 40-47 40" fill="none" stroke="#FFFFFF" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="1038" y="192" width="166" height="280" rx="44" fill="url(#proof)"/>
+  <rect x="1091" y="220" width="60" height="11" rx="5.5" fill="#22245E" opacity=".55"/>
+  <path d="m1074 337 31 31 59-71" fill="none" stroke="#22245E" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="1091" y="447" width="60" height="10" rx="5" fill="#22245E" opacity=".55"/>
+</svg>
