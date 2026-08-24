@@ -9,12 +9,48 @@
 **Build the user path, not just the code.**
 
 Ship Mobile App is an open, framework-neutral Agent Skill for Claude Code and
-Codex. It helps coding agents build, debug, and prepare production mobile apps
-across domain meaning, local and server state, offline behavior, lifecycle,
-native configuration, signed artifacts, and truthful user-facing claims.
+Codex. It makes a coding agent verify mobile work at the layers where apps
+actually fail — domain meaning, local and server state, offline behavior,
+lifecycle, native configuration, signed artifacts, and user-facing claims.
 
 It supports Flutter, React Native, native iOS, and native Android without
 prescribing one architecture.
+
+## Why it exists
+
+On mobile, code that compiles, passes tests, and behaves in a debug build can
+still fail the user:
+
+- an offline write shows the same `Saved` as a real commit, then dies with the
+  process;
+- a queued write flushes under whichever account happens to be signed in;
+- a permission lives in the debug source set but not in the signed release;
+- a "done" report claims more than anything was actually observed.
+
+Most agent workflows stop at "tests pass." This skill keeps the agent honest
+about everything after that.
+
+## The five truth boundaries
+
+Every request is checked against the boundaries it actually touches:
+
+| Boundary | Question |
+|---|---|
+| Domain | Does the data mean what the label and behavior claim? |
+| State | Are optimistic, queued, committed, stale, and failed states distinguishable? |
+| Lifecycle | Does it survive cold start, resume, background, permissions, and account transitions? |
+| Platform | Does the exact signed artifact contain the required configuration? |
+| Claim | Do UI, AI, privacy, and release claims match what was actually observed? |
+
+The skill traces the real path:
+
+```text
+user action -> UI -> domain logic -> persistence/sync
+            -> native or external service -> signed artifact -> user result
+```
+
+It selects only the boundaries touched by the request instead of turning every
+change into a release project.
 
 ## Install for Claude Code and Codex
 
@@ -47,26 +83,6 @@ description. The package follows the open Agent Skills format supported by
 [Claude Code](https://code.claude.com/docs/en/skills) and
 [Codex](https://learn.chatgpt.com/docs/build-skills).
 
-## The five truth boundaries
-
-| Boundary | Question |
-|---|---|
-| Domain | Does the data mean what the label and behavior claim? |
-| State | Are optimistic, queued, committed, stale, and failed states distinguishable? |
-| Lifecycle | Does it survive cold start, resume, background, permissions, and account transitions? |
-| Platform | Does the exact signed artifact contain the required configuration? |
-| Claim | Do UI, AI, privacy, and release claims match what was actually observed? |
-
-The skill traces the real path:
-
-```text
-user action -> UI -> domain logic -> persistence/sync
-            -> native or external service -> signed artifact -> user result
-```
-
-It selects only the boundaries touched by the request instead of turning every
-change into a release project.
-
 ## Use it for
 
 - non-trivial mobile features that cross UI, storage, backend, or native layers;
@@ -94,18 +110,27 @@ skills/ship-mobile-app/
 - `boundary-checks.md` covers time, state, identity, lifecycle, native, AI, and
   operational contracts.
 - `verification-ladders.md` separates source, tests, artifacts, devices, and
-  remote state.
+  remote state into distinct evidence levels.
 - `failure-patterns.md` contains anonymized synthetic diagnostics derived from
   recurring real-world failure shapes.
 
 ## Evidence and limitations
 
-`0.1.0` is an initial public preview. The package passed structural validation,
-cross-host installation checks, and independent synthetic evaluations. See
-[EVALS.md](EVALS.md) for the observed outcomes and untested boundaries.
+Ship Mobile App is an early public preview. Before release it passed:
 
-These checks do not establish universal productivity, correctness, or app success
-across every agent, framework, device, backend, or store.
+- structural validation and single-skill discovery by the open `skills` CLI;
+- cross-host installation checks for Claude Code and Codex, plus one bounded
+  Claude Code invocation;
+- trigger-routing checks against eight positive and negative prompts;
+- three independent synthetic evaluations: two small Dart fixtures (an offline
+  write and account-switching defect; a local-day calculation defect) and one
+  read-only Android debug/release configuration diagnosis.
+
+[EVALS.md](EVALS.md) records exactly what each check observed and which
+boundaries remain untested. These are development evidence for the skill
+itself, not benchmarks: they do not establish universal productivity,
+correctness, or app success across every agent, framework, device, backend, or
+store.
 
 ## Relationship to Goal to Proof
 
