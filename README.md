@@ -127,6 +127,14 @@ See [PRIVACY.md](PRIVACY.md) and [SECURITY.md](SECURITY.md). To report a
 reproducible false trigger or missing mobile boundary, open a GitHub issue. Use
 private vulnerability reporting for security-sensitive findings.
 
+## aiopshwang skill family
+
+Independent, evidence-first Agent Skills that work well together:
+
+- [goal-to-proof](https://github.com/aiopshwang/goal-to-proof) — the general completion gate: finish authorized work and prove the requested outcome.
+- [verify-regression-tests](https://github.com/aiopshwang/verify-regression-tests) — prove that a regression test actually detects its intended defect.
+- [data-analysis-ml-agent-skills](https://github.com/aiopshwang/data-analysis-ml-agent-skills) — decision-grade data analysis and ML: audits, leakage-safe experiments, validation, reproducible handoff.
+
 ## License
 
 MIT © `aiopshwang`.

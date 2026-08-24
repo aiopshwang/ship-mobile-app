@@ -4,7 +4,7 @@ description: Build, change, debug, and prepare production mobile apps across dom
 license: MIT
 metadata:
   author: aiopshwang
-  version: "0.1.0"
+  version: "0.1.1"
 ---
 
 # Ship Mobile App
@@ -15,6 +15,10 @@ A mobile change is complete only to the boundary actually observed. Source code,
 tests, debug builds, signed artifacts, store state, and behavior on a real device
 are different facts. Use the strongest practical evidence for the requested
 result, and label every untested layer honestly.
+
+The general completion discipline here is shared with the `goal-to-proof`
+skill; when both are installed, this skill supplies the mobile-specific
+boundaries and `goal-to-proof` supplies the overall gate.
 
 ## Frame the user loop
 

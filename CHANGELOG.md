@@ -2,6 +2,12 @@
 
 All notable public changes to Ship Mobile App are documented here.
 
+## [0.1.1] - 2026-08-24
+
+- Added a relationship note to the `goal-to-proof` completion gate in
+  `SKILL.md`.
+- Added skill-family links to the English and Korean READMEs.
+
 ## 0.1.0 — 2026-08-24
 
 Initial public preview.

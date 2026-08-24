@@ -121,6 +121,14 @@ skills/ship-mobile-app/
 오작동 트리거나 빠진 모바일 경계는 GitHub Issue로, 보안 문제는 비공개 취약점
 신고 기능으로 알려주세요.
 
+## aiopshwang 스킬 패밀리
+
+함께 쓰기 좋은 독립 Agent Skill들:
+
+- [goal-to-proof](https://github.com/aiopshwang/goal-to-proof) — 범용 완료 게이트: 승인된 작업을 끝까지 수행하고 결과를 증명.
+- [verify-regression-tests](https://github.com/aiopshwang/verify-regression-tests) — 회귀 테스트가 의도한 결함을 실제로 잡는지 증명.
+- [data-analysis-ml-agent-skills](https://github.com/aiopshwang/data-analysis-ml-agent-skills) — 의사결정 수준 데이터 분석·ML: 감사, 누수 안전 실험, 검증, 재현 가능한 인계.
+
 ## 라이선스
 
 MIT © `aiopshwang`.
