@@ -152,6 +152,7 @@ Ship Mobile App은 초기 공개 프리뷰입니다. 공개 전에 다음 검증
 - [goal-to-proof](https://github.com/aiopshwang/goal-to-proof) — 범용 완료 게이트: 승인된 작업을 끝까지 수행하고 결과를 증명.
 - [verify-regression-tests](https://github.com/aiopshwang/verify-regression-tests) — 회귀 테스트가 의도한 결함을 실제로 잡는지 증명.
 - [data-analysis-ml-agent-skills](https://github.com/aiopshwang/data-analysis-ml-agent-skills) — 의사결정 수준 데이터 분석·ML: 감사, 누수 안전 실험, 검증, 재현 가능한 인계.
+- [fresh-eyes-check](https://github.com/aiopshwang/fresh-eyes-check) — 맥락 없는 다른 모델이 예전 지시가 지금도 맞는지 확인한 뒤 행동.
 
 ## 라이선스
 
